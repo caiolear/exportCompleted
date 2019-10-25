@@ -5,7 +5,7 @@
             <?= $this->modal->replaceLink(t('Tasks'), 'ExportController', 'tasks', array('project_id' => $project['id'])) ?>
         </li>
 		<li <?= $this->app->checkMenuSelection('ExportController', 'completed') ?>>
-            <?= $this->modal->replaceLink(('Finalizadas'), 'ExportController', 'completed', array('project_id' => $project['id'])) ?>
+            <?= $this->modal->replaceLink('Finalizadas', 'ExportController', 'completed', array('project_id' => $project['id'], 'plugin' => 'exportCompleted')) ?>
         </li>
         <li <?= $this->app->checkMenuSelection('ExportController', 'subtasks') ?>>
             <?= $this->modal->replaceLink(t('Subtasks'), 'ExportController', 'subtasks', array('project_id' => $project['id'])) ?>
